@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ candidate.full_name }} Details</title>
+</head>
+<body>
+    <h1>{{ candidate.full_name }} Details</h1>
+    <p>First Name: {{ candidate.first_name }}</p>
+    <p>Last Name: {{ candidate.last_name }}</p>
+    <!-- Add other fields as needed -->
+
+    <a href="{% url 'candidate_update' candidate.pk %}">Edit</a>
+    <a href="{% url 'candidate_delete' candidate.pk %}">Delete</a>
+    <a href="{% url 'candidate_list' %}">Back to List</a>
+</body>
+</html>
