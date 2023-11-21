@@ -15,8 +15,14 @@ This API is used to Create, Read, Update and Delete the Candidate details.
     ```
 3. Run the application:
     ```py
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    python3 manage.py createsuperuser (and create superuser with your desired username and password)
     python3 manage.py runserver 127.0.0.1:8000
     ```
+
+## Initialization
+   Project need to setup by pre entered values in the admin panel. visit ```http://127.0.0.1:8000/admin``` after logged in enter all the values other than CandidateDirectory to support the development process when performing CRUD operations on CandidateDirectory.
 
 ## Endpoints
 1. Read All Candidate Detail
